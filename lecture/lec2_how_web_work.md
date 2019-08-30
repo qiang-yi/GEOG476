@@ -1,7 +1,7 @@
 
 # How the Web Works
 
-##### Instructor: Yi Qiang <br/>Email: yi.qiang@hawaii.edu <br/>Sept. 2nd, 2019
+##### Instructor: Yi Qiang <br/>Email: yi.qiang@hawaii.edu <br/>Aug. 29, 2019
 ---
 
 ## Learning objectives:

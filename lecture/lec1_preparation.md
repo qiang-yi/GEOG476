@@ -1,7 +1,7 @@
 
 # Preparing for Web Mapping
 
-##### Instructor: Yi Qiang <br/>Email: yi.qiang@hawaii.edu <br/>August 26th, 2019
+##### Instructor: Yi Qiang <br/>Email: yi.qiang@hawaii.edu <br/>August 29th, 2019
 ---
 
 ## Learning objectives:
@@ -87,9 +87,8 @@ Remember that some people may use mobile devices (e.g. smart phone, ipad, tablet
 **Backup storage**
 Any computer system can crash, be stolen or damaged. It is important to keep an additional backup of your work. I recommend you to have a USB flash stick to frequently backup your work. It can also be useful for transporting your work from one computer to another. Google Drive is an alternative solution.
 
-
 ## 4. What software do I need?
-There are many software tools available for web development. Most of these tools help people create webpages and writing programming code in webpages. I can't list all tools available in the market. The following are a number of commonly used tools for web development.
+There are many software tools available for web development. Most of these tools help people create webpages and writing programming code in webpages. I can't list all tools available in the market. The following are a number of commonly used tools for web development. All tools and packages used in this course will be open-source.
 
 ### 2.1 Web page authoring
 Web-authoring tools are similar to desktop publishing tools, but the end product is a web page (an HTML file and supporting files). These tools provide a visual "WYSIWYG" (What You See Is What You Get) interface in which you can add and move elements in a webpage. These tools also provide an interactive coding window that is dynamically linked with the webpage display. Any changes in the code can be simultaneously reflected in the webpage display. However, these tools won't excuse you from learning the languages. Even the most powerful tools won't generate HTML files as clean or well as a professional writing by hand, but they can speed up the process once you know what you're doing.
@@ -100,15 +99,24 @@ The following are some population web-authoring program:
 - Adobe Dreamweaver.
 - Microsoft Expression Web (previously known as Microsoft FrontPage) (windows only)
 - Nvu (Linux, Windows and Mac OS X)
+<img src="images/fig1-3.jpg" width=700>
+
+Interface of FrontPage
+
 
 ### 2.2 Text editor
-HTML files are essentially text files with a .html suffix. HTML files can be opened and also edited in any text eidtor. Thus, most of the prevalent text editors can be used for HTML editing. Unlike the WYSIWYG tools, text editors do not visually display the appearance of the webpage, but only the code. you need to check your work in a borwser. There are many good text editors which are free. Actually, many professional web designers actually prefer to author HTML documents. Some of the commonly used text editors include:
+HTML files are essentially text files with a .html suffix. HTML files can be opened and edited in any text editors. Thus, any text editors can be used for HTML editing. Unlike the WYSIWYG tools, text editors do not support dynamic code updating while you are creating and moving graphic elements. Some editors don't even display the webpage you are developing. Developers need to check their work in a browser. There are many good text editors which are free. Actually, many professional web designers prefer to author HTML documents using text editors. Some of the commonly used text editors include:
 
 - TextPad (default in Windows)
 - Subline Text (Windows, Mac, Linux)
 - Brackets (Windows, Mac, Linux)
 - Notepad++ (Windows, Mac, and Linux)
-- Atom (Windows, Mac, and Linu)
+- Atom (Windows, Mac, and Linux)
+
+<img src="images/fig1-4.jpg" width=700>
+
+Interface of Atom
+
 
 This class will use [Atom]((https://atom.io/). So please install the appropriate version in your computer if you plan to work on your own computer.
 
@@ -139,7 +147,13 @@ All course materials (syllabus, lectures, and assignments) will be posted in a [
 
 No textbook required. Most learning materials are from the web. We will learn web mapping from the web.
 
-## 4. Assignment submission
+## 4. Format of lectures
+- Teaching technical skills of web development and web map development.
+- Including lectures about the principles, on-screen demonstration, and lab exercises
+- Additional after-class readings will be recommended.
+- Evaluation will be based on assignments, mid-term and final project.
+
+## 5. Assignment submission
 There will be 10 lab exercises which will be assignments for you to complete by yourself. The assignments need to be submitted through Laulima. The submission can be a zip file of a website you developed or a URL to the website you uploaded to the server. Submit them through Laulima (**Don't email assignments to me without my consent!**.)
 
 **Late submission of assignment will lead to -20% in credits. Submission later than 1 week will receive NO CREDIT.**
