@@ -21,6 +21,7 @@ Examples of web maps:
 - [Google Maps](maps.google.com)
 - [US. Census Maps](https://www.census.gov/programs-surveys/geography/data/interactive-maps.html)
 - [NOAA Flood Exposure Mapper](https://www.census.gov/programs-surveys/geography/data/interactive-maps.html)
+- [Social explorer](https://www.socialexplorer.com)
 
 Other than the commonly used programming languages and development tools (e.g. Python, R), web mapping utilizes special tools, protocols and services for creating such interactive maps.
 
