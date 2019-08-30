@@ -6,8 +6,6 @@
 
 ## Learning objectives:
 - Understand the Common Concepts in Web Development
-- What skills you need to learn
-- What hwardware and software do you need
 
 ## 1. The Internet, the Web and cyberinfrastructure
 These terms means similar things and have been interchangably used in many contexts. However, it would be helpful to point out their difference.
@@ -17,13 +15,13 @@ The internet is a massive network of networks, a networking infrastructure. It c
 
 Quick Points about The Internet:
 - It is a global network connecting millions of computers.
-- The internet is decentralized.
-- Each internet computer is independent.
+- The Internet is decentralized.
+- Each Internet computer is independent.
 - There are a variety of ways to access the internet.
 - There are more than 3.5 billion internet users in the world.
 
 ### 1.2 The Web
-The World Wide Web (the Web) is a way of transmitting and sharing information over the medium of the internet. It is an information-sharing model that is built on top of the Internet. The web uses the HTTP protocol, one of the languages spoken over the internet, to transmit data. Web services, which use HTTP to allow applications to communicate in order to exchange business logic, use the web to share information. The web also utilizes browsers, such as Internet Explorer or Firefox, to access Web documents called webpages that are linked to each other via hyperlinks. Web documents also contain graphics, sounds, text and video.
+The World Wide Web (the Web) is a way of transmitting and sharing information over the medium of the internet. It is an information-sharing model that is built on top of the Internet. The web mainly uses the HTTP protocol, one of the languages spoken over the internet, to transmit data. Web services, which use HTTP to allow applications to communicate in order to exchange business logic, use the web to share information. The web also utilizes browsers, such as Internet Explorer or Firefox, to access Web documents called webpages that are linked to each other via hyperlinks. Web documents also contain graphics, sounds, text and video.
 
 Quick Points about The Web:
 - It is a system of internet servers that support specially formatted documents.

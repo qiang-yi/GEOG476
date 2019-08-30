@@ -18,9 +18,9 @@ Web mapping is essentially a kind of web development. Common elements for a regu
 <img src="images/fig1.jpg" width="600">
 
 Examples of web maps:
-- [Google Maps](maps.google.com)
+- [Google Maps](https://www.google.com/maps)
 - [US. Census Maps](https://www.census.gov/programs-surveys/geography/data/interactive-maps.html)
-- [NOAA Flood Exposure Mapper](https://www.census.gov/programs-surveys/geography/data/interactive-maps.html)
+- [NOAA Flood Exposure Mapper](https://coast.noaa.gov/digitalcoast/tools/flood-exposure.html)
 - [Social explorer](https://www.socialexplorer.com)
 
 Other than the commonly used programming languages and development tools (e.g. Python, R), web mapping utilizes special tools, protocols and services for creating such interactive maps.
@@ -37,7 +37,7 @@ The languages for web mapping are not different from general software developmen
 Which languages and technologies you learn will depend on the role you see yourself in within the web development process. Using this techniques you can build very sophisticated web system such as Google, Yahoo...
 
 
-**Front-end componnent**: elements in websites that appears in or relates directly to the browser. Most script of the front-end component will be downloaded with the browser when user is viewing the site. Open a webpage in the Chrome browser and hit Ctrl+Shift+I, you will be able see most of the front-end program in the _Element_ tab. Front-end application include light computation and small data volume.
+**Front-end component**: elements in websites that appears in or relates directly to the browser. Most script of the front-end component will be downloaded with the browser when user is viewing the site. Open a webpage in the Chrome browser and hit Ctrl+Shift+I, you will be able see most of the front-end program in the _Element_ tab. Front-end application include light computation and small data volume.
 Front-end development usually include the following tasks
   - Graphic design and image production
   - Interface design

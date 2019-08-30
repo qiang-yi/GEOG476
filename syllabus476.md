@@ -33,8 +33,8 @@ A laptop (either PC or Mac) is recommended for this course.
 
 |Component	|Score (%)|
 |---------|---------|
-|Lab assignments	|60|
-|Mid-term exam	|10|
+|Lab assignments	|50|
+|Mid-term exam	|20|
 |Final Project |20|
 |Participation	|10 |
 |Total	|100|
