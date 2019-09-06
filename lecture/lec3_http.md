@@ -175,8 +175,10 @@ Please create an account in Code Academy(https://www.codecademy.com/) or you can
 
 <img src="images/fig9-1.jpg" width = 700><br>
 
-Finish the first two lessons ("Introduction to HTML" and "HTML Document Standard").
+Finish the first two lessons (including **Introduction to HTML** and **HTML Document Standard**).
 
-When finished, take a **screenshot** of the webpage showing you finished all the 16 classes and **submit the screenshot through Laulima**.
+When finished, take a **screenshot(s)** of the webpage showing you finished all the tasks in the two lessons and **submit the screenshot(s) through Laulima**.
 
 <img src="images/fig9-2.jpg" width = 700><br>
+
+**Important: please DO NOT "Try Pro For Free" and DO NOT input your credit card in the website unless you plan to learn the PRO lessons.**
