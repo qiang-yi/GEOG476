@@ -21,16 +21,15 @@ Open a `New File` in the `File` menu in Atom. Copy the following codes and paste
 ```
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Page Title</title>
-</head>
-<body>
+	<head>
+		<meta charset="utf-8">
+		<title>Page Title</title>
+	</head>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-
-</body>
+	<body>
+		<h1>This is a Heading</h1>
+		<p>This is a paragraph.</p>
+	</body>
 </html>
 ```
 
