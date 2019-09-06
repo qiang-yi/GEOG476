@@ -1,5 +1,5 @@
 
-# HTTP and CSS
+# HTTP
 
 ##### Instructor: Yi Qiang <br/>Email: yi.qiang@hawaii.edu <br/>Sept. 9th, 2019
 ---
@@ -173,7 +173,10 @@ The previous demonstration went smoothly, but it’s easy for small things to go
 # Assignment
 Please create an account in Code Academy(https://www.codecademy.com/) or you can login with your google, facebook, linked in or github account. Search and finish the course **Introduction to HTML**.
 
-<img src="images/fig9-1.jpg" width = 700>
+<img src="images/fig9-1.jpg" width = 700><br>
 
+Finish the first two lessons ("Introduction to HTML" and "HTML Document Standard").
 
 When finished, take a **screenshot** of the webpage showing you finished all the 16 classes and **submit the screenshot through Laulima**.
+
+<img src="images/fig9-2.jpg" width = 700><br>
