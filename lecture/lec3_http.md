@@ -1,7 +1,7 @@
 
 # HTML
 
-##### Instructor: Yi Qiang <br/>Email: yi.qiang@hawaii.edu <br/>Sept. 9th, 2019
+##### Instructor: Yi Qiang <br/>Email: yi.qiang@hawaii.edu <br/>Sept. 6th, 2019
 ---
 
 ## Learning objectives:
