@@ -1,5 +1,5 @@
 
-# HTTP
+# HTML
 
 ##### Instructor: Yi Qiang <br/>Email: yi.qiang@hawaii.edu <br/>Sept. 9th, 2019
 ---
