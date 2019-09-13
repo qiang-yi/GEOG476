@@ -195,7 +195,7 @@ When you write a font-related style rule for an element (e.g. `<p>`), the style 
 
 <img src='images/fig9.jpg' width='600'>
 
-
+> In addition to the examples introduced in this class, there are many other styles can be changed in CSS. To learn more about CSS, you can always use Google or [W3C Schools](https://www.w3schools.com/css/default.asp).
 
 ## 6. CSS Template
 So far, you feel you have learned lot about HTML and CSS, but you are still confused where to start to build a website? Most people don't build a website from scratch. Instead, they usually start working from a template. You can find different HTML and CSS template in different websites, which may be free or paid. In the W3C school website, you can find some free template ([click here](https://www.w3schools.com/w3css/w3css_templates.asp)).
