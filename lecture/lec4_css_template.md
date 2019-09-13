@@ -22,7 +22,6 @@ CSS can be associated with a HTML document in 3 ways:
 
 The following HTML code embed CSS to re-define the style of the paragraph element (`<p>`).  The code between the ```<style>``` and tags ```</style>``` is CSS, which override the default style of ```<p>``` in the browser and re-defined the font color to red and aligned the text to the center. You can copy these code to overwrite the existing code in index.html that you created in the previous class to see the effect.
 
-T
 
 ```
 <!DOCTYPE html>
@@ -163,7 +162,7 @@ What will be the appearance of the following element?
 > Note: try to feel the different functions between ID selector and class selector. Styles defined in an ID selector can be applied to different elements (e.g. p, h1, h2...). However, a class selector defines a subtype of an element, which can only be applied to this element.
 
 ## 4. External Style Sheet
-As mentioned above, CSS can be added to a HTML document in three ways. The previous example shows how CSS can be inserted between the style tags in a HTML. However, CSS can be lengthy if many new styles are defined. To make the HTML succinct and easy to read, sometimes people would like to link HTML documents to an external CSS file.
+As mentioned above, CSS can be added to a HTML document in three ways. The previous example shows how CSS can be inserted between the style tags in a HTML. However, CSS can become lengthy if many new styles are added. To make the HTML succinct and easy to read, people would like to link HTML documents to an external CSS file.
 
 Please copy the following line of code and paste it between the ```<head>``` tag (not betwee the style tag) in index.html. This line of code is linking the HTML document to a external css file. The 'href' attribute defines the path of the css file, which is in the same (root) directory as the HTML file.
 
