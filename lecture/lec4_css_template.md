@@ -222,4 +222,4 @@ First, complete the first two lessons (**CSS Setup and Selectors** and **CSS Vis
 <img src="images/fig9-4.jpg" width=650><br>
 
 Second, please build a website to describe yourself, your band, your pet, your business or anything you are interested. I recommend you to start the development from a CSS template in the [W3C school website](https://www.w3schools.com/w3css/w3css_templates.asp) or using Mobirise. Upload the website to the UH server and send me the URL to your website through Laulima.
->Note: you can only upload up to 70M in the webserver. So please try not to use lots of large pictures.
+>Note: you can only upload up to 70M in the UH web server. So please try not to use lots of large pictures.
