@@ -307,7 +307,7 @@ For instance, the following function has a as an argument.
 
 ```
 function CalSum(a, b) {
-  a + b = c
+  c = a+b
   alert("the sum of the input is " + c);             // Function returns the product of a and b
 }
 ```
@@ -333,7 +333,7 @@ First, we would need to re-define the function by returning c.
 Note: the return keyword is the end the function. Any actions after the return keyword will not take place.
 ```
 function CalSum(a, b) {
-  a + b = c
+  c = a+b
   return c;             // Function returns the product of a and b
   alert("we'll never see this alert.")
 }
@@ -549,7 +549,7 @@ function myThirdFunction() {
 
 ## Assignment
 
-Please complete the Javascript exercises in [the W3CSchools website](https://www.w3schools.com/js/exercise_js.asp?). Submit a screenshot showing you have completed all the 68 exercises through Laulima.
+Please complete the Javascript exercises in [the W3CSchools website](https://www.w3schools.com/js/exercise_js.asp?). Submit a screenshot showing you have completed all the 68 exercises through Laulima by Sept 29 (Sunday), 11:55pm
 <img src="images/fig10-1.jpg" width-600>
 <!--
 Please learn other JavaScript syntax in the [tutorial in the W3Cschool website](https://www.w3schools.com/js/js_object_properties.asp). Depending on your time availability, you can focus on the following topics. Please make sure you understand the Javascript syntax introduced in the tutorial. You should try to run the example code to see how it works. In-class quizzes will be assigned next week to evaluate your learning outcomes, which will be an assignment.
