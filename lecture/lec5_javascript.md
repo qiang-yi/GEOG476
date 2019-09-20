@@ -48,7 +48,7 @@ In your JavaScript code, if you ever want to print something in a pop-up window,
 ```
 alert('Hello world')
 ```
-<img src='images/fig15.jpg' width ='800'>
+<img src="images/fig15.jpg" width ='800'>
 
 You can also print the variable in the console.
 ```
