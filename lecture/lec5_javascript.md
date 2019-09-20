@@ -243,9 +243,9 @@ Following the if statement, an else statement specifies a block of code to be ex
 var rain = prompt("Is it raining today?")
 
 if (rain == true) {
-  alert('Please bring an umbrella'); // print "Please bring an umbrella" if the variable 'rain' is true
+  alert("Please bring an umbrella"); // print "Please bring an umbrella" if the variable 'rain' is true
 } else {
-  alert('You don't need an umbrella'); // if rain is not true, print "You don't need an umbrella"
+  alert("You don't need an umbrella"); // if rain is not true, print "You don't need an umbrella"
 }
 ```
 
@@ -257,9 +257,9 @@ var rain = prompt("Is it raining today?")
 if (weather == 'rain') {
   alert('You must bring an umbrella'); // print "Please bring umbrella" if the variable 'weather' equals to 'rain'
 } else if (weather == 'shower') {
-  alert('You may bring an umbrella'); // print "Please bring umbrella" if the variable 'weather' equals to 'rain'
+  alert("You may bring an umbrella"); // print "Please bring umbrella" if the variable 'weather' equals to 'rain'
 } else {
-  alert('You dont' need an umbrella');  //if non of the above condition is met, print " You don't need an umbrella"
+  alert("You don't need an umbrella");  //if non of the above condition is met, print " You don't need an umbrella"
 }
 ```
 
@@ -278,12 +278,18 @@ You can see there are three statement in the parentheses after `for`. These stat
 You can omit Statement 1 or/and 3 in the `for` statement. However, you would need to define them somewhere else. Statement 2 is necessary.
 
 ```
+cars = ['ford','fiat','honda']
+
 var i = 0; // initialize i before the loop
 var len = cars.length;
+text = ""
+
 for (; i < len; ) {
   text += cars[i] + "<br>";
   i++; // add one to i in the loop
 }
+
+alert(text)
 ```
 
 ### 4.8 Functions
