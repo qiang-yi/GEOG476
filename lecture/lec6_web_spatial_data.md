@@ -1,7 +1,7 @@
 
 # Spatial Data for Web Mapping
 
-##### Instructor: Yi Qiang <br/>Email: yi.qiang@hawaii.edu <br/>Sept. 9th, 2019
+##### Instructor: Yi Qiang <br/>Email: yi.qiang@hawaii.edu <br/>Sept. 27th, 2019
 ---
 
 ## Learning objectives:
