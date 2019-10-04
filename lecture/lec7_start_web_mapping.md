@@ -1,7 +1,7 @@
 
 # Getting Started with Web Mapping
 
-##### Instructor: Yi Qiang <br/>Email: yi.qiang@hawaii.edu <br/>Sept. 16th, 2019
+##### Instructor: Yi Qiang <br/>Email: yi.qiang@hawaii.edu <br/>Oct. 4th, 2019
 ---
 This class will introduce how to LeafLet, the most popular web mapping library, to create a web map with GeoJSON data.
 
