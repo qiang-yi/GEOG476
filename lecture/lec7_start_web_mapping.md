@@ -88,7 +88,7 @@ Refresh chrome (). You'll see 12 printed in the console. This is the value of `z
 
 You can also use the console to find errors in your code. For instance, delete the  `}` at the end of the `options` declaration. Refresh chrome and check the message in Console.
 
-<img src="images/fig7-4.jpg" width=300>
+<img src="images/fig7-4.JPG" width=300>
 
 Undo the deletion before proceed
 
