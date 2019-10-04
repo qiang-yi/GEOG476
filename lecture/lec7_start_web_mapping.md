@@ -293,7 +293,7 @@ In this lab, we have created a simple Leaflet map to display our commuting route
 # Assignment
 1. Edit the HTML file to make the following changes to the website:
   - Replace the text in the box of 'about this map' to an appropriate description about this map.
-  - **(SKIP)** Change the three location markers to different colors. Think about which file and which variable you need to edit.
+  - Add a third point (e.g. your favorite coffee shop, bus stop...) to the map (which was missed in the class). **This is to replace the task of changing color**
   - Modify the following part in index.html to change the basemap. You can choose a basemap from [here](https://leaflet-extras.github.io/leaflet-providers/preview/).
 
 >  Tip: you can copy a part of the plain JavaScript code of a basemap to replace a part of the following code in index.html.
