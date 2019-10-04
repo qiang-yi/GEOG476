@@ -197,8 +197,6 @@ First, rename the saved map.geojson file to route.js. Then open the route.js fil
 
 Save those changes in route.js. GeoJSON essentially encodes JavaScript objects. Here we've simply assigned the GeoJSON objects to a JavaScript variable _data_, which will be available for us within the HTML document.
 
-Open the _index.html_ file within our module-01/app/ directory.
-
 The HTML code is remotely loading the jQuery and Leaflet Jabascript files before our custom code executes. Let's load this JavaScript file (route.js) into the document. As the file is in the same folder as the _index.html_ document, the relative path to the file is "route.js". Note, if the route.js is stored in a sub-folder (e.g. data), the relative path will become "data/route.js"
 
 Add the line `<script src="route.js"></script>` under the code that load jQuery and Leaflet.
@@ -206,7 +204,7 @@ Add the line `<script src="route.js"></script>` under the code that load jQuery 
 <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
 
-<script src="data/route.js"></script> // OUR DATA LOADED HERE!
+<script src="route.js"></script> // OUR DATA LOADED HERE!
 
 <script>
 
@@ -295,7 +293,7 @@ In this lab, we have created a simple Leaflet map to display our commuting route
 # Assignment
 1. Edit the HTML file to make the following changes to the website:
   - Replace the text in the box of 'about this map' to an appropriate description about this map.
-  - Change the three location markers to different colors. Think about which file and which variable you need to edit.
+  - **(SKIP)** Change the three location markers to different colors. Think about which file and which variable you need to edit.
   - Modify the following part in index.html to change the basemap. You can choose a basemap from [here](https://leaflet-extras.github.io/leaflet-providers/preview/).
 
 >  Tip: you can copy a part of the plain JavaScript code of a basemap to replace a part of the following code in index.html.
