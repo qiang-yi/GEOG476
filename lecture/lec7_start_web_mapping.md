@@ -50,29 +50,30 @@ Modern web browsers come installed with web developer tools. These tools come lo
 
 In the tab with the website open, go to the **Elements** tab of the Developer tool to view the content of the HTML file as it is rendered within the browser. While this will largely mirror the HTML document itself, the rendered DOM will also contain elements dynamically produced with JavaScript when the page loads.
 
-![](images/fig17.jpg)
+<img src="images/fig17.jpg"  width="600"/>
 
 You can move your mouse cursor over different elements in the HTML file and see the corresponding graphic elements in the browser.
 
-
-![](images/anim1.gif)
+<img src="images/anim1.gif"  width="600"/>
 
 You can also click the right-pointing triangular arrows to toggle descendant elements within an element.
 
-![](images/anim2.gif)
+<img src="images/anim2.gif"  width="500"/>
+
 
 You can even double click on an element to edit it.
 
 Double-click on `<h1>This is my first map</h1>` in the HTML. Change the title of the page to 'My first Leaflet map'.
 
-![](images/anim3.gif)
+<img src="images/anim3.gif"  width="500"/>
+
 
 If you don't like to use alert to print variables in a popup window (you need to click to close), you can also use the Console to print variables. For instance, add the following line under the declaration of the `options` object:
 
 ```
 console.log(options["zoom"]);
 ```
-Refresh chrome (). You'll see 12 printed in the console. This is the value of `zoom` property of the `options` object.
+Refresh chrome. You'll see 12 printed in the console. This is the value of `zoom` property of the `options` object.
 
 <img src="images/fig7-2.jpg" width=300>
 
@@ -82,7 +83,7 @@ Refresh chrome (). You'll see 12 printed in the console. This is the value of `z
   - Reload shortcut in Windows `ctrl+R` and in MacOS `cmd+R`.
 
 
-- **Hard refresh**: Cache can increase the loading speed for web users. Because of Cache, the browser may not update everything in the webpage when new edits are made. To show the updated webpage, you would have to do a hard refresh to reload 100% webpage over from the server.
+- **Hard refresh**: Cache can increase the loading speed for web users. But because of Cache, the browser may not update everything in the webpage when new edits are made. To show the whole updated webpage, you would have to do a hard refresh to reload 100% webpage over from the server.
   - Shortcut of hard refresh in Windows `ctrl+F5` and in MacOS `cmd+F5`.
 
 
@@ -90,7 +91,7 @@ You can also use the console to find errors in your code. For instance, delete t
 
 <img src="images/fig7-4.JPG" width=300>
 
-Undo the deletion before proceed
+Undo the deletion before proceed.
 
 Although you can edit html webpages in the developer tools in Chrome, most developers still use text editors such as Atom to do the major part of development. The developer tools in Chrome are primarily used for debugging and minor editing.
 
@@ -158,6 +159,7 @@ You will see your route from home to campus calculated by Google Maps.
 <img src="images/fig18.jpg"  width="600"/>
 
 When you have selected your desired route on the map, it'll become blue. Open a new tab in your browser and go to the website [Maps to GPX](https://mapstogpx.com/). Copy the entire URL from the address bar in the Google map tab. Paste the URL into the form and hit "Let's Go." The website will convert the route into a GPX file (a common data format generated from GPS trackers) for you to download. Please save the converted GPX file in the folder of index.html. You can open and view the downloaded GPX file in Atom.
+
 <img src="images/fig19.jpg"  width="600"/>
 
 > **GPX (the GPS Exchange Format)** is a text-based format derived from XML and often used to encode GPS data. You can open this file in your text editor to examine the contents. If you use the popular Strava service, you can download all your routes in GPX format.
