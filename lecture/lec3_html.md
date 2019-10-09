@@ -45,7 +45,6 @@ As you can see, your browser only displays the text between ```<title>``` and ``
 
 A HTML webpage is made of various elements such as "heading", "paragraph", "table". The types of elements are defined by the tags in <>. Browsers do not display the HTML tags, but use them to render the format (e.g. font, font size, color) of the element. A tag **without** a slash (`/`) (e.g. `<h1>`) is the start tag, while a tag with a slash (`/`) (e.g. <`/h1>`) is a closing tag. The text between a pair of start tag and closing tag are content of the element, which will be displayed in the browser.
 
-
 ## 3. HTML document structure
 The HTML script in Section 1 showss the minimal skeleton of an HTML document.
 <img src="images/fig8.jpg"  width="600"/>
@@ -62,6 +61,24 @@ The HTML script in Section 1 showss the minimal skeleton of an HTML document.
 5. Also in the head the title element is mandatory. According to the HTML specification, every document must contain a descriptive title.
 
 6. The body element contains everything that we want to show up in the browser window.
+
+```
+<html>
+	<body>
+
+		<h1>My <b>First</b> Heading</h1>
+		<p>My <b>first</b> paragraph.</p>
+
+	</body>
+</html>
+```
+The webpage looks like the following:
+
+<h1>My <b>First</b> Heading</h1>
+<p>My <b>first</b> paragraph.</p>
+
+
+In nested elements, the internal element inherits formatting properties from the external element containing it. In the above example, the element in the `<b>` tags inherit the font style and size defined by its external element `<p>` and `<h1>`. However, the bold font defined by `<b>` overrides the inherit properties to make the font bold.
 
 ## 5. Semantic Markup
 Such syntax where content is enclosed in tags is called Semantic Markup. The purpose of the markups is to add meaning and structure to the content. The markups also define how the content should look like (its presentations)
@@ -126,7 +143,9 @@ The picture won't show in your browser. Do you know why? How to fix it?
 
 
 ### 1.6 Nested Tags
-Whenever you have HTML tags within other HTML tags, you must close the nearest tag first. For example, `<b>Bold <I>Bold and Italic Nation </I> </b>` shows as <b>Bold <I>Bold and Italic Nation </I> </b>
+HTML elements can be nested (elements can contain elements). The easiest way to understand nesting is to think of HTML tags as boxes that hold your content. our content can include text, images, etc. HTML tags are the boxes around the content. Sometimes, you need to places boxes inside of other boxes. Those "inner" boxes are nested inside of others.
+
+The <html> element defines the whole document. It has a start tag `<html>` and an end tag `</html>`. Inside the `<html>` element is the `<body>` element, which defines the document body. Inside the `<body>` element are two other HTML elements: `<h1>` and `<p>`, which define a level-1 heading and a paragraph. Inside the heading and paragraph, the word 'first' is defined as bold.
 
 ### 1.7 Tables
 Tables can be used to display rows and columns of data, create multi-column text, captions for images, and sidebars.
