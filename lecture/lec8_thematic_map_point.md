@@ -34,9 +34,11 @@ As the Excel format (.xls) is a Microsoft data format, which is cannot be read b
 There are some rows and columns in the spreadsheet that we don't need. This is to make the data in a standard format that can be converted into GeoJSON at the next step and also for efficiency. Remember that when serving maps over the web we want to keep file sizes as small as we can. This will increase the efficiency of your web application (your webpages will load in browser more quickly).
 
 Delete the metadata in the first 5 rows so that the column headers are in the first row.
+
 <img src="images/fig22.jpg"  width="400"/>
 
 Delete the columns "REPORTING YEAR", "PARENT COMPANIES", and "SUBPARTS", which are not used for mapping in this lesson.
+
 <img src="images/fig23.jpg"  width="400"/>
 
 Next, we want to further prepare the data for use within a scripting environment. **Spaces can be problematic in the names of files, directories, and data attributes. DON'T USE SPACES!!!** I had to yell that one because it is important and perpetually violated.
@@ -307,12 +309,13 @@ Upload the Hawaii map you created in this lesson onto your UH webspace.
 
 
 ### Task 2:
-Create a web map to plot 2013 CO2 emission per capita by country as proportional symbols.
+Create a web map to show 2013 CO2 emission per capita by country as proportional symbols.
 - The CO2 emission data can be downloaded from [here](https://drive.google.com/file/d/1814RXzmCxcFBACgs3mw_9G388DlEsYxf/view?usp=sharing).
 - You would need to convert the downloaded data (shapefile) into GeoJSON.
+- You create proportional symbols according to the attribute **Year_2013**. Remember to delete unnecessary attributes to make the app efficient.
 - The map should have the same functionalities as the map you created in this lesson (You can modify from the web map you created today).
 - Upload the created map and associated data to your UH webspace.
 
 **Submission**: Submit the URLs to the Hawaiian map and world CO2 per capita emission map through Laulima by **Friday, Oct. 25th 11:55pm**.
 
-Recommend: you can create two folders in your public_html folder in your webspace to store the two maps and their associated data.
+Recommendation: you can create two folders in your public_html folder in your webspace to store the two maps and their associated data.
