@@ -54,7 +54,7 @@ Make the following changes:
 * Change "COUNTY NAME NAME" to "COUNTY"
 * Change "ZIP CODE" to "ZIP"
 * Change "GHG QUANTITY (METRIC TONS CO2e)" to "GHG_QUANTITY"
-*
+
 The table should look like:
 
 <img src="images/fig24.JPG"  width="400"/>
