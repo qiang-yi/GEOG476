@@ -57,7 +57,7 @@ Make the following changes:
 *
 The table should look like:
 
-<img src="images/fig24.jpg"  width="400"/>
+<img src="images/fig24.JPG"  width="400"/>
 
 Next, we save this table in a CSV format. While this should be a simple "Save As .." we need to be careful with this step. Different programs use different character encodings to save a CSV file, as well as different line break characters. This can cause problems later on when we load and parse the data using JavaScript in the browser. The saving process is different depending on what software you use.
 
@@ -162,7 +162,7 @@ function drawMap(data) {
       return L.circleMarker(latlng)
     }
   }
-    L.geoJson(data, options).addTo(map); # creating the layer from geojson data with options
+    L.geoJson(data, options).addTo(map); // creating the layer from geojson data with options
 }
 ```
 Refresh Chrome to and you'll see the point symbols become circles in the map.
@@ -181,7 +181,7 @@ Next, we are going to assigned different circle sizes to the facilities accordin
 
 We first replace "40" by `feature.properties.GHG_QUANTITY` in the above line. This is to use the greenhouse quantities as the diameter values of the circles. However, you'll see the map becomes blue as the circles become enormously large and totally blocked the map. This is because the values of greenhouse quantities are too large to be used as diameters of the circles.
 
-<img src="images/fig8-4.jpg" width="500"/>
+<img src="images/fig8-4.JPG" width="500"/>
 
 
 We need to make the circles smaller but proportional to the GreenHouse quantity. Next, we define an function to convert the GHG values to diameter values.
@@ -312,7 +312,7 @@ Upload the Hawaii map you created in this lesson onto your UH webspace.
 Create a web map to show 2013 CO2 emission per capita by country as proportional symbols.
 - The CO2 emission data can be downloaded from [here](https://drive.google.com/file/d/1814RXzmCxcFBACgs3mw_9G388DlEsYxf/view?usp=sharing).
 - You would need to convert the downloaded data (shapefile) into GeoJSON.
-- You create proportional symbols according to the attribute **Year_2013**. Remember to delete unnecessary attributes to make the app efficient.
+- You create proportional symbols according to the attribute **Year_2013**. Delete the unnecessary attributes to make datasize small.
 - The map should have the same functionalities as the map you created in this lesson (You can modify from the web map you created today).
 - Upload the created map and associated data to your UH webspace.
 
