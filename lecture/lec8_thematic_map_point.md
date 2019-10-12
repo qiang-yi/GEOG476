@@ -299,6 +299,7 @@ function showAttribute(feature, layer) {
 ```
 
 Refresh the browser and try to move the mouse over the markers. You should see the outline of the markers change to yellow when the mouse is over.
+
 <img src="images/fig8-8.jpg" width="500">
 
 ---
