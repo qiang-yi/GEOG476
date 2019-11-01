@@ -97,9 +97,12 @@ Next, alter the fonts that are used as labels in your style.
 3. Choose **Fonts**.
 4. Select **Roboto Black**. This will return the only layer in which this font is being used, **state-label**.
 5. Click on state-label, then click on **Font**. Change the font to `Roboto Condensed Bold`.
+
 <img src="../lecture/images/anim19.gif" width="1000">
-6. Click all values in the filter.
-7. Click on **Filter layers** again, and repeat this process for the font `Roboto Regular`, which you will change to `Roboto Medium`.
+
+6. Click on **Filter layers** again, and repeat this process for the font `Roboto Regular`, which you will change to `Roboto Medium`.
+y. Click all values in the filter.
+
 
 <img src="../lecture/images/anim20.gif" width="1000">
 
