@@ -101,7 +101,7 @@ Next, alter the fonts that are used as labels in your style.
 <img src="../lecture/images/anim19.gif" width="1000">
 
 6. Click on **Filter layers** again, and repeat this process for the font `Roboto Regular`, which you will change to `Roboto Medium`.
-y. Click all values in the filter.
+7. Click all values in the filter.
 
 
 <img src="../lecture/images/anim20.gif" width="1000">
