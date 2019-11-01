@@ -186,7 +186,6 @@ Insert the following stylesheet and js APIs in the `head` of index.html.
 
 ```
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script></head>
 
 ```
 You need to compose a URL for the basemap you created in MapBox.
