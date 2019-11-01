@@ -193,10 +193,10 @@ You need to compose a URL for the basemap you created in MapBox.
 
 - Find the style URL you have saved (in an empty text file).
 
-- Copy and paste your MapBox **username** and the **style's ID** to replace `YOUR_USERNAME` and `YOUR_STYLE_ID` in the following code.
+- Copy and paste your MapBox **username**, **style's ID**, and **access token** to replace `YOUR_USERNAME`, `YOUR_STYLE_ID`, and `YOUR_ACCESS_TOKEN` in the following code.
 
 ```javascript
-mapURL3='https://api.mapbox.com/styles/v1/YOUR_USERNAME/YOUR_STYLE_ID/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYWxleHRvcWlhbmciLCJhIjoiY2o4bWhrZm16MHk5dzJ3cnRmYmkwZnNmZSJ9.nyqjv70jer1JKs1qaK3d7w';
+mapURL3='https://api.mapbox.com/styles/v1/YOUR_USERNAME/YOUR_STYLE_ID/tiles/256/{z}/{x}/{y}?access_token=YOUR_ACCESS_TOKEN';
 
 ```
 
