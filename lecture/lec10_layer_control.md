@@ -9,13 +9,12 @@ This lesson will introduce how to combine multiple feature layers in a map and a
 
 ## Learning objectives:
 - Learn to add multiple layers in a map
-- Learn to add a layer group in a map
-- Develop interactive controls to switch map layers
+- Develop checkbox to turn on/off map layers
+- Develop toggle control to switch basemaps
 
 
-Download files for this lesson from [Google Drive](https://drive.google.com/open?id=1TmyYVW6guW6iRkY_O-ZaeTr9Obn9mjCd). Store the files in a local folder in your computer.
+Download files for this lesson from [Google Drive](https://drive.google.com/open?id=1TmyYVW6guW6iRkY_O-ZaeTr9Obn9mjCd). There is a template (index.html) and two geojson datasets. Store the files in a local folder in your computer. I recommend to create a folder for each lesson.
 
-Before proceeding, verify you have correctly set up your development environment with the necessary components. Refer to [Lec 7: getting started with web mapping](https://github.com/qiang-yi/GEOG476/blob/master/lecture/lec7_start_web_mapping.md) for help.
 
 
 ## Step 1. Adding an additional layer to the map
@@ -24,10 +23,12 @@ As usual, conduct the following steps to set up the development environment:
 - Launch a Python HTTP server, using the downloaded folder as the root directory.
 - Open the website in Chrome using `localhost` as the domain name.
 
+Refer to [Lec 7: getting started with web mapping](https://github.com/qiang-yi/GEOG476/blob/master/lecture/lec7_start_web_mapping.md) for help.
+
 
 Review the code in _index.html_. You can find it is actually the choropleth map we created in lecture 8. At this step, we will add another feature layer to the map.
 
-Before editing, it is helpful to hide the content of functions and objects and only show the names. This will help you to navigate through the document and find the function you want to edit. You can expand the function when you need to edit it.
+Before editing the HTML file, it is helpful to hide the content of functions and objects and only show the names. This will be easier for you to navigate through the document and find the function you want to edit. You can expand the function when you need to edit it.
 
 <img src="images/anim26.gif" width=600>
 
@@ -40,7 +41,7 @@ cities = L.geoJson.ajax("cities.json").addTo(map);
 
 You can add as many layers as you want to the map. If there are many layers, it would be easier to combine multiple layers into a _layer group_ and add the entire layer group at one time.
 
-Let's delete `.addTo(map)` from the end of the two `L.geoJson.ajax` functions, and add a _layer group_ of the two layers.
+Delete `.addTo(map)` at the end of the two `L.geoJson.ajax` functions, and add a _layer group_ of the two layers.
 
 The modified code should look like:
 ```javascript
@@ -55,6 +56,8 @@ cities = L.geoJson.ajax("cities.json");
 
 var featurelayers = L.layerGroup([geojson,cities]).addTo(map);
 ```
+
+The above codes group the two layers into a layer group first and then add them to the map at one time.
 
 The point markers represent cities with >100k population. It would be interesting to express the size of the cities in the map. We can use proportional symbols to represent the population of the cities (you've done this in lecture 8).
 
