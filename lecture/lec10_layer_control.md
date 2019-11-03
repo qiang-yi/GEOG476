@@ -46,7 +46,7 @@ Delete `.addTo(map)` at the end of the two `L.geoJson.ajax` functions, and add a
 The modified code should look like:
 ```javascript
 // Create a layer of states from us-states.json
-geojson = L.geoJson.ajax("us-states.json", {
+states = L.geoJson.ajax("us-states.json", {
     style: state_style,
     onEachFeature: onEachFeature
 }); //DELETE .addTo(map) here
@@ -54,7 +54,7 @@ geojson = L.geoJson.ajax("us-states.json", {
 // Create another layer of cities from cities.json
 cities = L.geoJson.ajax("cities.json");
 
-var featurelayers = L.layerGroup([geojson,cities]).addTo(map);
+var featurelayers = L.layerGroup([states,cities]).addTo(map);
 ```
 
 The above codes group the two layers into a layer group first and then add them to the map at one time.
@@ -113,7 +113,7 @@ Add the following code after the `layerGroup` is added to the map.
 
 ```javascript
 var featureLayers = {
-    "States": geojson,
+    "States": states,
     "Cities": cities
 };
 

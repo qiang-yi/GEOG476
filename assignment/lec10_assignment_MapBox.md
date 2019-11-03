@@ -166,7 +166,7 @@ mapbox://styles/alextoqiang/cjzbv54uv04u31cnxplrpx6cs
 You can find your map's style URL in [Style page of Mapbox Studio](https://www.mapbox.com/studio/styles)
 <img src="../lecture/images/fig45.jpg" width="600">
 
-Open a new file in Atom. Copy and paste the style URL to into the file for later use.
+Open a new file in Atom. Copy and paste your **username**, **style's ID** to into the file for later use.
 
 
 ### 5.2 Access Token
@@ -184,8 +184,7 @@ Many other web map services (such as Google Maps and Bing Maps) are using access
 ### 5.3 Use the customized basemap in leaflet
 In order to show how to use a customized basemap in leaflet, please refer to the source codes of this lecture.
 
-
-Insert the following stylesheet and js APIs in the `head` of index.html.
+Insert the following stylesheet in the `head` of index.html.
 
 ```
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
