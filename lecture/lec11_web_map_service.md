@@ -286,7 +286,7 @@ Follow the same procedure in this lesson, do the following:
   3. a choropleth map "the ratio of population in flood zone per county"
   4. a basemap.
 
-Please modify and add the following code to create a toggle control for Layer 1-3.
+Delete all javascript codes between the `<script>` tags in index.html. Modify and add the following code to create a web map to show the multiple layers.
 
 ```javascript
 
@@ -336,7 +336,7 @@ Please modify and add the following code to create a toggle control for Layer 1-
 
 ```
 
-The toggle control like below is placed at a corner of the map.
+The map should have a control so you can switch and turn on/off the layers.
 
 <img src ="images/fig11-6.jpg" width =800><br>
 
