@@ -133,13 +133,13 @@ For management reasons, you share the same workspace with other students for lay
 
 First, we use FTP protocal to transfer the shapefile to the GeoServer server. You need a FTP to do this is because I can't give you full access to the server. When you have your own server, you can upload data in easier ways (e.g. remote desktop).
 - Log in ftp://128.171.126.21/ in Filezilla client or or Windows File Explorer. (**Note: you are logging into a different FTP from the UH web space.**)
-- Enter your username, which is your first name initial + last name (e.g. John Smith -> jsmith), and password (your student ID).
+- Enter your username, which is your first name initial + last name (e.g. John Smith -> jsmith), and password (your student ID). You can leave Port empty.
 
 <img src="images/fig11-4.jpg" width="800"><br>
 
 - Copy and paste the shapefile (chicago.shp) to the server. Note, you need to upload all the component files of the shapefile.
 
-<img src="images/fig60.jpg" width="800"><br>
+<img src="images/fig87.jpg" width="800"><br>
 
 Next, we create a store that points to the folder where you uploaded the shapefile through FTP.
 - Click **Stores** in the interface and click **Add new Store**. Click **Directory of spatial files (shapefile)**.
