@@ -289,10 +289,6 @@ Follow the same procedure in this lesson, do the following:
 Please modify and add the following code to create a toggle control for Layer 1-3.
 
 ```javascript
-var map = L.map('map', {
-	center: [-17, -67],
-	zoom: 3
-});
 
 var layers = {
   //link to the flood zone (county) layer
