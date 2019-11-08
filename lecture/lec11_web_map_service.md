@@ -317,6 +317,7 @@ var layers = {
 
 ```
 
+The toggle control like below is placed at a corner of the map.
 
 <img src ="images/fig11-6.jpg" width =200><br>
 
