@@ -342,7 +342,7 @@ The map should have a control so you can switch and turn on/off the layers. You 
 
 Finally, upload the web map (index.html) into your UH web server.
 
-#### Submission
+## Submission
 Submit the URL (e.g. www2.hawaii.edu/~yourusername...) to the web map through Laulima by **Nov 22th (Friday), 11:55pm**.
 
 **Important**: as you are sharing the same account in GeoServer, please name your layers and styles with your username (e.g. fz_yourname and fz_style_yourname) to distinguish them from others. Please be careful not to delete others' files. If you did in accident, please let me or other know.
