@@ -131,8 +131,7 @@ A map view pops up and shows the boundaries of the states. You can click on a st
 At this step, we are going to publish a polygon layer in GeoServer.
 For management reasons, you share the same workspace with other students for layer publishing. You will create your own **store** to store your data.
 
-First, we use FTP protocal to transfer the shapefile to the GeoServer server.
-
+First, we use FTP protocal to transfer the shapefile to the GeoServer server. You need a FTP to do this is because I can't give you full access to the server. When you have your own server, you can upload data in easier ways (e.g. remote desktop).
 - Log in ftp://128.171.126.21/ in Filezilla client or or Windows File Explorer. (**Note: you are logging into a different FTP from the UH web space.**)
 - Enter your username, which is your first name initial + last name (e.g. John Smith -> jsmith), and password (your student ID).
 
@@ -142,8 +141,7 @@ First, we use FTP protocal to transfer the shapefile to the GeoServer server.
 
 <img src="images/fig60.jpg" width="800"><br>
 
-
-Next, we create a store that points to the folder where you uploaded the shapefile using FTP.
+Next, we create a store that points to the folder where you uploaded the shapefile through FTP.
 - Click **Stores** in the interface and click **Add new Store**. Click **Directory of spatial files (shapefile)**.
 - Name the store using your name initial + last name.
 - Write a short description of the store (optional).
@@ -155,31 +153,31 @@ Next, we create a store that points to the folder where you uploaded the shapefi
 
 Now, the store points to a directory in your FTP site in the server, which means you can publish data layers uploaded in the store.
 
-
-- Click **Layers** in the GeoServer Admin interface and create a new layer from your data store. I'll see the uploaded shapefile showing in the interface.
-- Click **Publish**.
+- Click **Save**, and you will be directed to a page of new layers for publishing. Click **Publish** to proceed.
+- If you are not directed to the publishing page, you could also create a layer in the store.
+- Click **Layers** -> **Add a new layer**.
+- Add a layer from **student:chicago_yourname**. Then click **Publish**.
 
 <img src="images/anim30.gif" width="1000"><br>
 
-Note: you may see layers created by your classmates in the **Layers** interface. **Please be careful and DO NOT delete others' layers**
+Note: you may see layers created by your classmates in the **Layers** interface. **Please be careful and DO NOT delete others' files**
 
-Name the layer in the format "chicago_yourname" so I can tell who created the layer.
+- Name the layer as **chicago_yourname**.
 
 <img src="images/fig66.jpg" width="500">
 
-Computer Native Bounding Box and Lat/Lon Bounding Box.
+- Computer Native Bounding Box and Lat/Lon Bounding Box.
 
 <img src="images/fig63.jpg" width="400"><br>
 
-Click **Save** on the bottom of the page to publish the data layer. Then, you can find the layer in the **Layers** page.
-
+- Click **Save** on the bottom of the page to publish the data layer. Then, you can find the layer in the **Layers** page.
 <img src="images/fig11-5.jpg" width="800"><br>
 
 
-Click **Layer Preview** and then click **** to preview the layer. You can preview the published layer in **Layer Preview**.
+- You can preview the published layer in **Layer Preview**.
 <img src="images/anim31.gif" width="800"><br>
 
-This is the URL of the WMS, which you can use to link the layer to a web map.
+- This is the URL of the WMS, which you will use to link the layer to a web map.
 
 <img src="images/fig64.jpg" width="800"><br>
 
@@ -240,11 +238,15 @@ Unlike the previous chicago layer which was loaded from your computer, the chica
 
 Additionally, you can pull a basemap from other WMS to integrate with the chicago layer QGIS.
 
-- In QGIS, click **Plugins > Manage and Install Plugins**. Search **"OSM"** and install **OpenLayers Plugins**.
+- In QGIS, click **Plugins > Manage and Install Plugins**. Search **"OSM"** and install **OpenLayers Plugins** (or called **QuickMapServices** in certain versions of QGIS).
+
 <img src="images/fig70.jpg" width="600"><br>
 
 - Then, click **Web -> OpenLayers plugin -> OpenStreetMap -> OpenStreetMap** to add the OSM basemap into QGIS.
+
 <img src="images/fig71.jpg" width="600"><br>
+
+Note: the naming can be different if you use QuickMapServices.
 
 - In the **Layer** panel, place the OMS basemap under the Chicago layer. You'll see the two layers overlaid in the map view.
 <img src="images/fig72.jpg" width="600">
@@ -293,27 +295,28 @@ var map = L.map('map', {
 });
 
 var layers = {
-
+  //link to the flood zone (county) layer
   'Ratio of population in flood zone': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
   	layers: 'student:fz_YOURNAME'
   }),
 
+  //link to the cities layer
   'Cities': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
   	layers: 'student:cities_YOURNAME'
   }),
 
+  //link to the rivers layer
   'Rivers': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
     layers: 'student:rivers_YOURNAME'
   }),
 
-  'All layers': L.tileLayer.wms('https://demo.boundlessgeo.com/geoserver/ows?', {
+  //link to all the three layers.
+  'All layers': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
 		layers: 'student:fz_YOURNAME,student:cities_YOURNAME,student:rivers_YOURNAME'
 	})
 };
 
-	L.control.layers(layers, {}, {collapsed: false}).addTo(map);
-
-	layers.Countries.addTo(map);
+L.control.layers(layers, {}, {collapsed: false}).addTo(map);
 
 ```
 
