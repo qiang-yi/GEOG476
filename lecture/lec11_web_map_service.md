@@ -1,9 +1,7 @@
 
 # Web Map Service
 
-##### Instructor: Yi Qiang <br/>Email: yi.qiang@hawaii.edu <br/>Nov. 8
-
-th, 2019
+##### Instructor: Yi Qiang <br/>Email: yi.qiang@hawaii.edu <br/>Nov. 8th, 2019
 ---
 This lesson will introduce web map services (WMS) and how to set up web map services in GeoServer.
 
