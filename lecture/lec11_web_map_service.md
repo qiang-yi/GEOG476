@@ -249,7 +249,7 @@ Additionally, you can pull a basemap from other WMS to integrate with the chicag
 Note: the naming can be different if you use QuickMapServices.
 
 - In the **Layer** panel, place the OMS basemap under the Chicago layer. You'll see the two layers overlaid in the map view.
-<img src="images/fig72.jpg" width="600">
+<img src="images/fig86.jpg" width="600">
 
 In QGIS, both layers are pulled from WMS hosted in remote servers. In a web map, you can render and display layers from WMS hosted in different servers. Integrate geospatial data published in distributed servers is called **map mashup**, which is an important advantage of WMS compared with desktop GIS. There is a set of international standard of WMS, which facilitate map mashup with WMS layers from different sources.
 
