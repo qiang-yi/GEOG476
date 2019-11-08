@@ -200,9 +200,6 @@ You need to compose a URL for the basemap you created in MapBox.
 mapURL3='https://api.mapbox.com/styles/v1/YOUR_USERNAME/YOUR_STYLE_ID/tiles/256/{z}/{x}/{y}?access_token=YOUR_ACCESS_TOKEN';
 
 ```
-
-Alternatively, you can get this URL from the **Share** window in the style editor:
-<img src="../lecture/images/anim25.gif" width="1000">
 Anyone with the URL can view the map styel you created.
 
 Add another basemap in addition to the two existing basemaps in the web map (index.html) created in the lesson. The new basemap's URL is the URL you just composed.
