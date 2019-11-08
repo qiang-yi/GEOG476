@@ -289,34 +289,50 @@ Follow the same procedure in this lesson, do the following:
 Please modify and add the following code to create a toggle control for Layer 1-3.
 
 ```javascript
-var map = L.map('map', {
-  center: [38, -95],
-  zoom: 4
-});
 
-var layers = {
-  //link to the flood zone (county) layer
-  'Ratio of population in flood zone': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
-  	layers: 'student:fz_YOURNAME'
-  }),
+      //Define two basemaps
+      mapURL1='URL of BASEMAP 1'
+      mapURL2='URL of BASEMAP 2'
 
-  //link to the cities layer
-  'Cities': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
-  	layers: 'student:cities_YOURNAME'
-  }),
+      var basemap1 = L.tileLayer(mapURL1, {id: 'MapID'}),
+      basemap2   = L.tileLayer(mapURL2, {id: 'MapID'});
 
-  //link to the rivers layer
-  'Rivers': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
-    layers: 'student:rivers_YOURNAME'
-  }),
+      var baseMaps = {
+          "BASE_MAP1": basemap1,
+          "BASE_MAP2": basemap2
+      };
 
-  //link to all the three layers.
-  'All layers': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
-		layers: 'student:fz_YOURNAME,student:cities_YOURNAME,student:rivers_YOURNAME'
-	})
-};
+      //Create a map view centered at Chicago with an appropriate zoom level.
+      //Use basemap1 as the default basemap
+      var map = L.map('map', {
+      	center: [38, -95],
+      	zoom: 4,
+        layers:basemap1
+      });
 
-L.control.layers(layers, {}, {collapsed: false}).addTo(map);
+      var layers = {
+
+        'Ratio of population in flood zone': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
+            layers: 'YOUR_LAYER_NAME',
+            format: 'image/png',
+            transparent: true
+        }),
+
+        'Cities': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
+            layers: 'YOUR_LAYER_NAME',
+            format: 'image/png',
+            transparent: true
+        }),
+
+        'Rivers': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
+          layers: 'YOUR_LAYER_NAME',
+          format: 'image/png',
+          transparent: true
+        })
+      };
+
+    L.control.layers(baseMaps, layers,  {collapsed: false, position:'bottomright'}).addTo(map);
+
 
 ```
 
