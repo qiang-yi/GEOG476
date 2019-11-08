@@ -131,30 +131,33 @@ A map view pops up and shows the boundaries of the states. You can click on a st
 At this step, we are going to publish a polygon layer in GeoServer.
 For management reasons, you share the same workspace with other students for layer publishing. You will create your own **store** to store your data.
 
+First, we use FTP protocal to transfer the shapefile to the GeoServer server.
 
-Click **Stores** in the interface and click **Add new Store**. Click **Directory of spatial files (shapefile)**.
+- Log in ftp://128.171.126.21/ in Filezilla client or or Windows File Explorer. (**Note: you are logging into a different FTP from the UH web space.**)
+- Enter your username, which is your first name initial + last name (e.g. John Smith -> jsmith), and password (your student ID).
 
-<img src="images/fig56.jpg" width="500">
+<img src="images/fig11-4.jpg" width="800"><br>
 
+- Copy and paste the shapefile (chicago.shp) to the server. Note, you need to upload all the component files of the shapefile.
+
+<img src="images/fig60.jpg" width="800"><br>
+
+
+Next, we create a store that points to the folder where you uploaded the shapefile using FTP.
+- Click **Stores** in the interface and click **Add new Store**. Click **Directory of spatial files (shapefile)**.
 - Name the store using your name initial + last name.
 - Write a short description of the store (optional).
 - Click **Browse...** and navigate to `D:/http_website/spatial_manoa_hawaii_edu/webmapping/YOURUSERNAME/`
 - Click **Save** to create the store.
 
+
 <img src="images/anim28.gif" width="800">
 
-Now, the store points to a directory in your FTP site in the server.
+Now, the store points to a directory in your FTP site in the server, which means you can publish data layers uploaded in the store.
 
-Next, log in ftp://128.171.126.21/ in Filezilla client or or Windows File Explorer. Enter your username, which is your first name initial + last name (e.g. John Smith -> jsmith), and password (your student ID).
 
-<img src="images/fig11-4.jpg" width="800"><br>
-
-Copy and paste the shapefile (chicago.shp) to the server. Note, you need to upload all the component files of the shapefile.
-
-<img src="images/fig60.jpg" width="800"><br>
-
-Click **Layers** in the GeoServer Admin interface and create a new layer from your data store. I'll see the uploaded shapefile showing in the interface.
-Click **Publish**.
+- Click **Layers** in the GeoServer Admin interface and create a new layer from your data store. I'll see the uploaded shapefile showing in the interface.
+- Click **Publish**.
 
 <img src="images/anim30.gif" width="1000"><br>
 
@@ -163,7 +166,6 @@ Note: you may see layers created by your classmates in the **Layers** interface.
 Name the layer in the format "chicago_yourname" so I can tell who created the layer.
 
 <img src="images/fig66.jpg" width="500">
-
 
 Computer Native Bounding Box and Lat/Lon Bounding Box.
 
@@ -285,28 +287,29 @@ Follow the same procedure in this lesson, do the following:
 Please modify and add the following code to create a toggle control for Layer 1-3.
 
 ```javascript
-	var map = L.map('map', {
-		center: [-17, -67],
-		zoom: 3
-	});
+var map = L.map('map', {
+	center: [-17, -67],
+	zoom: 3
+});
 
-	var layers = {
-		'Ratio of population in flood zone': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
-			layers: 'student:fz_YOURNAME'
-		}),
+var layers = {
 
-		'Cities': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
-			layers: 'student:cities_YOURNAME'
-		}),
+  'Ratio of population in flood zone': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
+  	layers: 'student:fz_YOURNAME'
+  }),
 
-    'Rivers': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
-      layers: 'student:rivers_YOURNAME'
-    }),
+  'Cities': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
+  	layers: 'student:cities_YOURNAME'
+  }),
 
-    'All layers': L.tileLayer.wms('https://demo.boundlessgeo.com/geoserver/ows?', {
-			layers: 'student:fz_YOURNAME,student:cities_YOURNAME,student:rivers_YOURNAME'
-		})
-  };
+  'Rivers': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
+    layers: 'student:rivers_YOURNAME'
+  }),
+
+  'All layers': L.tileLayer.wms('https://demo.boundlessgeo.com/geoserver/ows?', {
+		layers: 'student:fz_YOURNAME,student:cities_YOURNAME,student:rivers_YOURNAME'
+	})
+};
 
 	L.control.layers(layers, {}, {collapsed: false}).addTo(map);
 
