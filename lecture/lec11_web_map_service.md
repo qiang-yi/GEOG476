@@ -179,7 +179,7 @@ Note: you may see layers created by your classmates in the **Layers** interface.
 
 - This is the URL of the WMS, which you will use to link the layer to a web map.
 
-<img src="images/fig64.jpg" width="800"><br>
+<img src="images/fig84.jpg" width="800"><br>
 
 Now, you have published a data layer as a WMS in GeoServer. The WMS can be accessed in web maps and GIS software using the URL of the WMS.
 
@@ -269,7 +269,7 @@ var chicagoLayer = L.tileLayer.wms("http://spatial.manoa.hawaii.edu:8080/geoserv
 ```
 
 Refresh Chrome, you can see the polygons from the WMS showing in the map:
-<img src="images/fig77.jpg" width="600">
+<img src="images/fig85.jpg" width="600">
 
 Unlike the previous maps you created, which use GeoJson data stored in the local server, this map lodas a WMS layer published in a web map server.
 
