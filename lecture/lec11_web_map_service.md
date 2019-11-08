@@ -338,7 +338,7 @@ Please modify and add the following code to create a toggle control for Layer 1-
 
 The toggle control like below is placed at a corner of the map.
 
-<img src ="images/fig11-6.jpg" width =200><br>
+<img src ="images/fig11-6.jpg" width =800><br>
 
 Finally, upload the web map (index.html) into your UH web server.
 
