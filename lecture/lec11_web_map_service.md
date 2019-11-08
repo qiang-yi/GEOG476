@@ -338,7 +338,7 @@ Delete all javascript codes between the `<script>` tags in index.html. Modify an
 
 The map should have a control so you can switch and turn on/off the layers. You can be creative to define styles for the layers. No need to replicate the example map below.
 
-<img src ="images/fig11-6.jpg" width =800><br>
+<img src ="images/fig11-7.jpg" width =800><br>
 
 Finally, upload the web map (index.html) into your UH web server.
 
