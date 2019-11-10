@@ -82,6 +82,9 @@ Any Macintosh, Windows, or Linux computer you bought in last 5 years should be f
 **A large monitor or multiple monitors**
 Although not a hard requirement, a large monitor or multiple monitors can make web development easier. The more monitor real estate you have, the more windows and control panels you can open at the same time. In web development, you need to often shift between a text editor for programming and a browser for testing. It would be good to have a monitor to open all windows of the tools.
 
+**A mouse**
+Web development is not only typing code. You need to do lots of copying and pasting, dragging files to different folders, right-clicking on folders and items, which may not be convenient to do in the touchpad in a laptop. If you work in your laptop, I recommend you to bring a mouse to class or you can borrow one from the lab computer. But please remember to plug it back after the class.
+
 **Mobile devices**
 Remember that some people may use mobile devices (e.g. smart phone, ipad, tablet) to visit your website. Having a mobile device can be useful for testing the appearance and performance of your site on a mobile browser. It would be great if you already have a smartphone or tablet. If you don't, you may ask your fiends if you spend a few minutes to look at your site on theirs.
 
@@ -146,7 +149,7 @@ FTP stands for File Transfer Protocol that can be used in any computer (Windows,
 ## 3. Course Materials
 All course materials (syllabus, lectures, and assignments) will be posted in a [GitHub repository](https://github.com/qiang-yi/GEOG476).
 
-No textbook required. Most learning materials are from the web. We will learn web mapping from the web.
+We will learn web mapping from the web. Most learning materials are from the web. No textbook required. 
 
 ## 4. Format of lectures
 - Teaching technical skills of web development and web map development.
@@ -157,6 +160,6 @@ No textbook required. Most learning materials are from the web. We will learn we
 ## 5. Assignment submission
 There will be 10 lab exercises which will be assignments for you to complete by yourself. The assignments need to be submitted through Laulima. The submission can be a zip file of a website you developed or a URL to the website you uploaded to the server. Submit them through Laulima (**Don't email assignments to me without my consent!**.)
 
-**Late submission of assignment will lead to -20% in credits. Submission later than 1 week will receive NO CREDIT.**
-
-Submission will be occupy 50% of your final grade.
+- **Late submission of assignment will lead to -20% in credits. Submission later than 1 week will receive NO CREDIT.**
+- Submission will occupy 50% of your final grade. The assignments are easy points you should get to have a good grade.
+- The assignments are designed for you to complete within a reasonable time. Don't struggle for a long time. Contact me if you need help.

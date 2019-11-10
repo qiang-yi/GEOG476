@@ -71,18 +71,18 @@ If you have any challenges to learning and need support of any kind, you are inv
 |Week day |   Date    |  Topic|
 |---|---|---|
 |Wk 1||[Preparation for web development](lecture/lec1_preparation.md); [How web works](lecture/lec2_how_web_work.md).|
-|Wk 2||[Web Programming Basics 1: HTML](lecture/lec3_http.md); Lab 1: Editing a HTML webpage|
-|Wk 3||[Web Programming Basics 2: CSS and web templates](lecture/lec4_css_template.md); Lab 2: Create a personal website|
-|Wk 4||[Web Programming Basics 3: Javascript](lecture/lec5_javascript.md); Lab 3:Programming in Javascript|
-|Wk 5||[Spatial data models for web map](lecture/lec6_web_spatial_data.md); Lab 4: Data conversion|
-|Wk 6||[Getting started with web mapping](lecture/lec7_start_web_mapping.md); Lab 5: Create your first web map |
-|Wk 7||[Thematic Map](lecture/lec8_thematic_map_point.md); Lab 6: Interactive map with proportional symbols|
+|Wk 2||[Web Programming Basics 1: HTML](lecture/lec3_http.md); <br> Lab 1: Editing a HTML webpage|
+|Wk 3||[Web Programming Basics 2: CSS and web templates](lecture/lec4_css_template.md); <br> Lab 2: Create a personal website|
+|Wk 4||[Web Programming Basics 3: Javascript](lecture/lec5_javascript.md);<br>  Lab 3:Programming in Javascript|
+|Wk 5||[Spatial data models for web map](lecture/lec6_web_spatial_data.md);<br>  Lab 4: Data conversion|
+|Wk 6||[Getting started with web mapping](lecture/lec7_start_web_mapping.md);<br>  Lab 5: Create your first web map |
+|Wk 7||[Thematic Map](lecture/lec8_thematic_map_point.md);<br>  Lab 6: Interactive map with proportional symbols|
 |Wk 8||Mid-term exam|
-|Wk 9||[Choropleth map](lecture/lec9_choropleth_map.md); Lab 7: Choropleth map|
-|Wk 10||[Layers and Layer Group](lecture/lec10_layer_control.md); [Lab 8: Customize basemap using MapBox](assignment/lec10_assignment_MapBox.md)|
-|Wk 11||[Web map services](lecture/lec11_web_map_service.md); [Lab 9: Setting and managing GeoServer](assignment/lec11_assignment_GeoServer.md)|
+|Wk 9||[Choropleth map](lecture/lec9_choropleth_map.md);<br>  Lab 7: Choropleth map|
+|Wk 10||[Layers and Layer Group](lecture/lec10_layer_control.md);<br>  [Lab 8: Customize basemap using MapBox](assignment/lec10_assignment_MapBox.md)|
+|Wk 11||[Web map services](lecture/lec11_web_map_service.md);<br>  Lab 9: Setting and managing GeoServer|
 |Wk 12||3D maps; Lab 10: Creating 3D web map|
-|Wk 13||Geoprocessing and analysis; Lab 11: Geoprocessing and analysis with Turf.js and MapBox|
+|Wk 13||Course review|
 |Wk 14||Final project|
 |Wk 15||Final project|
 |Wk 16||Final project presentation|
