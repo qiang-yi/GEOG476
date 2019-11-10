@@ -29,11 +29,11 @@ You will need a few resources to get started:
 Log in to your Mapbox account and navigate to the [Styles](https://studio.mapbox.com/styles) page. This is where all your map styles are listed. A [style](https://docs.mapbox.com/help/glossary/style/) is a set of rules that defines how Mapbox draws your map on the webpage. It includes references to your data, map images (icons, markers, and patterns), fonts, and defines how all your data should be styled on the map. For more information about styles, read the [Styles](https://docs.mapbox.com/studio-manual/reference/styles/) section of the Mapbox Studio Manual.
 
 To create a new style from your [Styles](https://docs.mapbox.com/studio-manual/reference/styles/) page, click the **New style** button. Find the Basic Template style and click **Customize Basic Template**.
-<img src="../lecture/images/fig41.jpg" width="500">
+<img src="../lecture/images/fig41.jpg" width="700">
 
 Then, the Mapbox Studio style editor opens, and you should be able to start creating a custom map style.
 
-<img src="../lecture/images/fig42.jpg" width="500">
+<img src="../lecture/images/fig42.jpg" width="700">
 
 ---
 
@@ -184,7 +184,9 @@ Many other web map services (such as Google Maps and Bing Maps) are using access
 ### 5.3 Use the customized basemap in leaflet
 In order to show how to use a customized basemap in leaflet, please refer to the source codes of this lecture.
 
-Insert the following stylesheet in the `head` of index.html.
+Insert the following stylesheet in the `head` of index.html. This is to link to some special styles of the MapBox map.
+
+If this line is already there, you don't need to insert again.
 
 ```
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
