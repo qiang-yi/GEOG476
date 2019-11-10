@@ -202,7 +202,7 @@ You need to compose a URL for the basemap you created in MapBox.
 mapURL3='https://api.mapbox.com/styles/v1/YOUR_USERNAME/YOUR_STYLE_ID/tiles/256/{z}/{x}/{y}?access_token=YOUR_ACCESS_TOKEN';
 
 ```
-Anyone with the URL can view the map styel you created.
+Anyone with the URL can view the map style you created.
 
 Add another basemap in addition to the two existing basemaps in the web map (index.html) created in the lesson. The new basemap's URL is the URL you just composed.
 
@@ -228,9 +228,9 @@ Note: instead of using the style, MapBox provides Javascript APIs that facilitat
 <img src="../lecture/images/fig50.jpg" width="1000">
 
 ## More about Mapbox
-In addition to a basemap, you can create various types maps (e.g. thematic map, 3D map, heat map...) using MapBox. You may refer to [the tutorials in MapBox](https://docs.mapbox.com/help/tutorials/) about how to create these maps.
+In addition to a basemap, you can create various types maps (e.g. thematic map, 3D map, heat map...) using MapBox. You may refer to [the tutorials in MapBox](https://docs.mapbox.com/help/tutorials/) to learn how to create these maps.
 
-However, bear in mind, MapBox is not free. MapBox gives you [free monthly usage up to a limit](https://www.mapbox.com/pricing/). If you want to deploy your web map in a website with many users, you should either have the budget to pay for the MapBox usage or build your own web service.
+However, bear in mind, MapBox is NOT free. MapBox gives you [free monthly usage up to a limit](https://www.mapbox.com/pricing/). If you want to deploy your web map in a website with many users, you should either have the budget to pay for the usage or build your own web service (next lesson).
 
 Note, relying your web map functionalities on a commercial provider is always a risk. The price hike of Google Maps in 2018 affected many web map applications built on its APIs. For long-term sustainability of you web map, it is better to prepare back-ups for potential unavailability of the services.
 
