@@ -145,7 +145,7 @@ Next, we create a store that points to the folder where you uploaded the shapefi
 - Click **Stores** in the interface and click **Add new Store**. Click **Directory of spatial files (shapefile)**.
 - Name the store using your name initial + last name.
 - Write a short description of the store (optional).
-- Click **Browse...** and navigate to `D:/http_website/spatial_manoa_hawaii_edu/webmapping/YOURUSERNAME/`
+- Click **Browse...** and navigate to `D:/ftp_root/webmapping/YOURUSERNAME/`
 - Click **Save** to create the store.
 
 
