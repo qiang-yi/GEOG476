@@ -8,9 +8,10 @@ This lesson introduces platforms and libraries that can be used for 3D mapping.
 
 ## Learning objectives:
 - Introduction to 3D maps
-- Creating 3D maps using the virtual globe library [Cesium.js](https://cesium.com/)
+- Using [Cesium.js](https://cesium.com/) to create a choropleth map in a virtual globe
+- Using [Cesium.js](https://cesium.com/) to create a prism map in a virtual globe
 
-Download the [zip file for this lab](https://drive.google.com/file/d/1--uHlWjgODOtScB71g1FyPUyIZxJCC47/view?usp=sharing) and extract it in a known location (i.e., a directory in your Documents). The file contains a shapefile (world.shp).
+Download the [zip file for this lab](https://drive.google.com/file/d/1--uHlWjgODOtScB71g1FyPUyIZxJCC47/view?usp=sharing) and extract it in a known location (i.e., a directory in your Documents). The file contains a shapefile (i.e. world.shp).
 
 As usual, please launch a local HTTP server in Python. The local HTTP server can help you to identify errors (in Chrome Developer Tools) in your code. Refer to [Lec 7: getting started with web mapping](../lec7_start_web_mapping.md) for help.
 
@@ -85,11 +86,11 @@ Not all services in Cesium are free. [Here](https://cesium.com/pricing/) is the 
 
 When logged in, go to the **Access Tokens** page. Copy the long string of access token, and paste it to replace `Your_Access_Token` in index.html.
 
-<img src="images/fig90.jpg" width=1200>
+<img src="images/fig90.jpg" width=1200><br>
 
 Now, you can see a virtual globe appeared in the HTML preview and Chrome (after refresh).
 
-<img src="images/fig91.jpg" width=1000>
+<img src="images/fig91.jpg" width=1000><br>
 
 You can use your mouse to rotate the globe or use the scroll to zoom in and out. Try the different controls in the interface.
 
@@ -104,7 +105,7 @@ var viewer = new Cesium.Viewer('cesiumContainer', {
 
 Now when you zoom to a specific location, such as “Grand Canyon, AZ”. Press down the scroll in your mouse to change the view angle. Then, you can see the Cesium World Terrain in action.
 
-<img src="images/fig92.jpg" width=900>
+<img src="images/fig100.jpg" width=900><br>
 
 You can change the `options` of `Censium.Viewer` to activate or deactivate controls in the interface. For instance, you can replace the codes that create `Censium.Viewer` to the following:
 
