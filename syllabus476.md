@@ -81,7 +81,7 @@ If you have any challenges to learning and need support of any kind, you are inv
 |Wk 9||[Choropleth map](lecture/lec9_choropleth_map.md);<br>  Lab 7: Choropleth map|
 |Wk 10||[Layers and Layer Group](lecture/lec10_layer_control.md);<br>  [Lab 8: Customize basemap using MapBox](assignment/lec10_assignment_MapBox.md)|
 |Wk 11||[Web map services](lecture/lec11_web_map_service.md);<br>  Lab 9: Setting and managing GeoServer|
-|Wk 12||3D maps; Lab 10: Creating 3D web map|
+|Wk 12||[3D maps](lecture/lec12_3D_map.md); Lab 10: Creating 3D web map|
 |Wk 13||Course review|
 |Wk 14||Final project|
 |Wk 15||Final project|

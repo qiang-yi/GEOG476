@@ -40,7 +40,7 @@ We will learn [Cesium.js](https://cesium.com/cesiumjs/) in this lesson. You are 
 
 Cesium was founded by AGI (AGI) in 2011 as a cross-platform virtual globe for dynamic-data visualization in the space and defense industries. Since then, Cesium has grown into a 3D globe serving industries from geospatial and oil and gas to agriculture, real estate, entertainment, and sports. Currently, Cesium is lead by the Cesium Consortium, started by Analytical Graphics, Inc. and Bentley Systems. The consortium was started to accelerate open-source Cesium development and support long-term open-source Cesium sustainability.
 
-The following figure shows example applications built on Censiu.js
+The following figure shows example applications built on Cesium.js
 
 <img src="images/fig89.jpg" width=1000>
 
@@ -107,7 +107,7 @@ Now when you zoom to a specific location, such as “Grand Canyon, AZ”. Press 
 
 <img src="images/fig100.jpg" width=900><br>
 
-You can change the `options` of `Censium.Viewer` to activate or deactivate controls in the interface. For instance, you can replace the codes that create `Censium.Viewer` to the following:
+You can change the `options` of `Cesium.Viewer` to activate or deactivate controls in the interface. For instance, you can replace the codes that create `Cesium.Viewer` to the following:
 
 ```JavaScript
 var viewer = new Cesium.Viewer('cesiumContainer', options);
@@ -145,6 +145,10 @@ To convert the shapefile into geojson, you need to:
 <img src="images/fig93.jpg" width=500>
 
 ## 4.2 Add data to the virtual globe
+Click **Add Data** in your Cesium account. Upload world.geojson into your Cesium ion account.
+
+<image src="images/anim38.gif" width=700>
+
 Next, we add the uploaded GeoJson data into the virtual globe.
 
 Add the following codes after the `options` object.
@@ -171,7 +175,7 @@ Refresh chrome, you'll see the country boundaries are added on the virtual globe
 
 ## 4.3 Create a choropleth map
 
-Next, we add the following codes which break the attribute values into classes and assign colors to the classes. We used similar codes in [lesson 9: choropleth map](lec9_choropleth_map.md). These codes need to be added above the `Censium.IonResource.fromAssetId` function.
+Next, we add the following codes which break the attribute values into classes and assign colors to the classes. We used similar codes in [lesson 9: choropleth map](lec9_choropleth_map.md). These codes need to be added above the `Cesium.IonResource.fromAssetId` function.
 
 ```JavaScript
 // determine the number of classes and their respective break values.
