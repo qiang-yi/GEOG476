@@ -110,7 +110,6 @@ Now when you zoom to a specific location, such as “Grand Canyon, AZ”. Press 
 You can change the `options` of `Cesium.Viewer` to activate or deactivate controls in the interface. For instance, you can replace the codes that create `Cesium.Viewer` to the following:
 
 ```JavaScript
-var viewer = new Cesium.Viewer('cesiumContainer', options);
 var options = {
     terrainProvider : Cesium.createWorldTerrain(),
     vrButton: true,  // virtual reality support
@@ -123,6 +122,9 @@ var options = {
     animation: false,
     timeline: false
   }
+
+var viewer = new Cesium.Viewer('cesiumContainer', options);
+
 ```
 
 Try to change the true to false or false to true to see how the interface changes.

@@ -211,7 +211,7 @@ mapURL3=INSERT_STYLE_URL_HERE;
 
 var basemap1 = L.tileLayer(mapURL1, {id: 'MapID'}),
 basemap2   = L.tileLayer(mapURL2, {id: 'MapID'});
-var basemap3 = L.tileLayer(mapURL3 {id: 'MapID'})
+var basemap3 = L.tileLayer(mapURL3， {id: 'MapID'})
 
 var baseMaps = {
     "Topography": basemap1,
