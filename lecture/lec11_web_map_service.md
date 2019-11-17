@@ -290,49 +290,91 @@ Delete all javascript codes between the `<script>` tags in index.html. Modify an
 
 ```javascript
 
-      //Define two basemaps
-      mapURL1='URL of BASEMAP 1'
-      mapURL2='URL of BASEMAP 2'
+//Define two basemaps
+mapURL1='http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png'
+mapURL2='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
 
-      var basemap1 = L.tileLayer(mapURL1, {id: 'MapID'}),
-      basemap2   = L.tileLayer(mapURL2, {id: 'MapID'});
+var basemap1 = L.tileLayer(mapURL1, {id: 'MapID'}),
+basemap2   = L.tileLayer(mapURL2, {id: 'MapID'});
 
-      var baseMaps = {
-          "BASE_MAP1": basemap1,
-          "BASE_MAP2": basemap2
-      };
+var baseMaps = {
+  "Simple gray": basemap1,
+  "Satellite": basemap2
+};
 
-      //Create a map view centered at Chicago with an appropriate zoom level.
-      //Use basemap1 as the default basemap
-      var map = L.map('map', {
-      	center: [38, -95],
-      	zoom: 4,
-        layers:basemap1
-      });
+//Create a map view centered at Chicago with an appropriate zoom level.
+//Use basemap1 as the default basemap
+var map = L.map('map', {
+  center: [38, -95],
+  zoom: 4,
+  layers:basemap1
+});
 
-      var layers = {
+var layers = {
 
-        'Ratio of population in flood zone': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
-            layers: 'YOUR_LAYER_NAME',
-            format: 'image/png',
-            transparent: true
-        }),
+  'Ratio of population in flood zone': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
+      layers: 'WORKSPACE:LAYER_NAME',  //Modify to your layer name
+      format: 'image/png',
+      transparent: true
+  }),
 
-        'Cities': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
-            layers: 'YOUR_LAYER_NAME',
-            format: 'image/png',
-            transparent: true
-        }),
+  'Cities': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
+      layers: 'WORKSPACE:LAYER_NAME',  //Modify to your layer name
+      format: 'image/png',
+      transparent: true
+  }),
 
-        'Rivers': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
-          layers: 'YOUR_LAYER_NAME',
-          format: 'image/png',
-          transparent: true
-        })
-      };
+  'Rivers': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
+      layers: 'WORKSPACE:LAYER_NAME',  //Modify to your layer name
+      format: 'image/png',
+      transparent: true
+  })
+};
 
-    L.control.layers(baseMaps, layers,  {collapsed: false, position:'bottomright'}).addTo(map);
+// Add all layers (baselayers and WMS layers) to the layer switch control.
+L.control.layers(baseMaps, layers,  {collapsed: false, position:'bottomright'}).addTo(map);
 
+// A function that get all layers loaded in map
+function getLayers() {
+  var layers = [];
+  map.eachLayer(function(layer) {
+      if( layer instanceof L.TileLayer )
+          layers.push(layer);
+  });
+  return layers;
+}
+
+// a function that updates legend according to layer loaded in map
+function updateLegend(){
+  layers = getLayers(); // Create an empty list to store layers loaded in map
+
+  document.getElementsByClassName("legend")[0].innerHTML=""; // clean legend first
+
+  // Loop through all layers (except base layer, id:0) loaded in map
+  for (i = 1; i < layers.length; i++) {
+    // Create the uri to access the legend from the style (SLD) of the layer
+    uri = "http://spatial.manoa.hawaii.edu:8080/geoserver/wms";
+    uri += "?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=15&HEIGHT=15&";
+    uri += "LAYER="+layers[i].options.layers;  // layer name varies
+    uri += "&legend_options=fontName:Times%20New%20Roman;fontAntiAliasing:true;fontColor:0x000033;fontSize:14;bgColor:0xFFFFEE;dpi:180";
+
+    //Compose the HTML to be inserted in the legend block
+    legend ="<h3>" + layers[i].options.layers + "</h3>" + "<img src=\""+uri+"\">";
+
+    //Add the layer legend to the legend block.
+    document.getElementsByClassName("legend")[0].innerHTML += legend;
+  }
+}
+
+// Update legend when new layer is added to map.
+  map.on('overlayadd', function(e) {
+  updateLegend();
+});
+
+// Update legend when a layer is removed from map.
+  map.on('overlayremove', function(e) {
+  updateLegend();
+});
 
 ```
 
@@ -347,7 +389,7 @@ Submit the URL (e.g. www2.hawaii.edu/~yourusername...) to the web map through La
 
 **Important**: as you are sharing the same account in GeoServer, please name your layers and styles with your name or name initials (e.g. fz_yourname and fz_style_yourname) to distinguish from others. Please be careful not to delete others' files. If you did in accident, please let me or others know.
 
-**Remind**: you have log-ins for
+**Reminder**: you have different log-ins for
 1. UH web server (your UH username + password)
 2. GeoServer (assigned in class)
 3. FTP in the GeoServer (assigned in class).
