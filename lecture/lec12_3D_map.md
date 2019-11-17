@@ -228,10 +228,10 @@ The 3D virtual globe allows you to make use of the x-dimension (height). You can
 This step is easy, simply add the following line between the lines of `p[i].polygon.material` and `p[i].polygon.outline`.
 
 ```JavaScript
-p[i].polygon.extrudedHeight = Math.pow(p[i].properties.NatInc_pct._value,2)*500 ;
+p[i].polygon.extrudedHeight = Math.pow(p[i].properties.NatInc_pct._value,2)*200000 ;
 
 ```
-This line makes `height = BrthRate_p * BrthRate_p * 500`.
+This line makes `height = BrthRate_p * BrthRate_p * 200000`.
 
 Check your map, you'll see the country polygons are elevated. The heights represent the natural population increase.
 
