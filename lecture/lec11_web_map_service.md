@@ -278,13 +278,15 @@ Unlike the previous maps you created, which use GeoJson data stored in the local
 Download the data from [here](https://drive.google.com/file/d/1_HlKQWpGjhrZW2NlYlioOSks8B1gaP4f/view?usp=sharing) and extract the shapefile (floodzone.shp) into a folder in your computer. The shapefile contains counties where flood maps are available.
 Follow the same procedure in this lesson, do the following:
 1. Upload and publish three shapefiles (floodzone.shp, cities.shp, and rivers.shp) as a WMS layer in GeoServer, name the layer as fz_YOURNAME, cities_YOURNAME, and rivers_YOURNAME.
-2. Using QGIS to create a style (SDL file) to assign graduated colors to the polygons according to the attribute **r_pop_fz**, which is ratio of population in 100-year-flood zone. Name the style (fz_style_YOURNAME)
-3. Upload the style file into GeoServer and apply the style to the published flood zone layer (fz_YOURNAME).
-4. Create a simple web map with the following layers:
+2. Using QGIS to create a style (SDL file) to assign graduated colors to the polygons according to the attribute **r_pop_fz**, which is ratio of population in 100-year-flood zone. Name the style (fz_style_YOURNAME).
+3. You may need to create styles for the river and city layers if their color conflicts with the colors of the flood zone layer. You can repeat the previous step to create these styles.
+4. Upload the style files into GeoServer and apply the styles to the published layers respectively.
+5. Create a simple web map with the following layers:
   1. a city layer showing cities as points
   2. a river layer showing the major rivers in US as polylines
   3. a choropleth map "the ratio of population in flood zone per county"
   4. a basemap.
+
 
 ### Step 1: Add WMS layers to layer control
 Delete all javascript codes between the `<script>` tags in index.html. Modify and add the following code to create a web map to show the multiple layers.
@@ -340,6 +342,10 @@ var layers = {
 L.control.layers(baseMaps, layers,  {collapsed: false, position:'bottomright'}).addTo(map);
 
 ```
+At thsi step, your map should look like below. **Note**: you don't need to replicate the map. You can be creative in choosing your styles.
+
+<img src="images/fig11-8.jpg" width =1000><br>
+
 
 
 ### Step 2: Add interactive legend for the WMS layers
@@ -392,7 +398,11 @@ function updateLegend(){
 });
 
 ```
-Test your web map in the local http server.
+Test your web map in the local http server. Your legend should show up when you turn on the corresponding layers.
+
+<img src="images/fig11-7.jpg" width =1000><br>
+
+The layer names shown in legend is a bit awkward (e.g. student:fz_yqiang), which is OK for the assignment. This is because we share the same account so we need to use special naming to differentiate our files. You can create more understandable layer names when you work on your own server.
 
 Finally, upload the web map (index.html) into your UH web server.
 
