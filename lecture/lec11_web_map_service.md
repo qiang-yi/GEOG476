@@ -286,7 +286,12 @@ Follow the same procedure in this lesson, do the following:
   3. a choropleth map "the ratio of population in flood zone per county"
   4. a basemap.
 
+### Step 1: Add WMS layers to layer control
 Delete all javascript codes between the `<script>` tags in index.html. Modify and add the following code to create a web map to show the multiple layers.
+
+The map should have a control to switch and turn on/off the layers. You can be creative to define styles for the layers. No need to replicate the example map below.
+
+You need to replace `WORKSPACE:LAYER_NAME` to your published layer names accordingly.
 
 ```javascript
 
@@ -313,19 +318,19 @@ var map = L.map('map', {
 var layers = {
 
   'Ratio of population in flood zone': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
-      layers: 'WORKSPACE:LAYER_NAME',  //Modify to your layer name
+      layers: 'WORKSPACE:LAYER_NAME1',  //Modify to your layer name
       format: 'image/png',
       transparent: true
   }),
 
   'Cities': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
-      layers: 'WORKSPACE:LAYER_NAME',  //Modify to your layer name
+      layers: 'WORKSPACE:LAYER_NAME2',  //Modify to your layer name
       format: 'image/png',
       transparent: true
   }),
 
   'Rivers': L.tileLayer.wms('http://spatial.manoa.hawaii.edu:8080/geoserver/wms', {
-      layers: 'WORKSPACE:LAYER_NAME',  //Modify to your layer name
+      layers: 'WORKSPACE:LAYER_NAME3',  //Modify to your layer name
       format: 'image/png',
       transparent: true
   })
@@ -334,6 +339,16 @@ var layers = {
 // Add all layers (baselayers and WMS layers) to the layer switch control.
 L.control.layers(baseMaps, layers,  {collapsed: false, position:'bottomright'}).addTo(map);
 
+```
+
+
+### Step 2: Add interactive legend for the WMS layers
+
+Legend is an important component of maps (including web maps). GeoServer WMS layers allow access to the legend in the layer style file (SLD file) using an URI.
+
+Add the following codes after the previously added codes to have legends shown interactively when you turn on and off the WMS layers.
+
+```javascript
 // A function that get all layers loaded in map
 function getLayers() {
   var layers = [];
@@ -352,7 +367,7 @@ function updateLegend(){
 
   // Loop through all layers (except base layer, id:0) loaded in map
   for (i = 1; i < layers.length; i++) {
-    // Create the uri to access the legend from the style (SLD) of the layer
+    // Create the uri to access the legend from the layer's style (SLD)
     uri = "http://spatial.manoa.hawaii.edu:8080/geoserver/wms";
     uri += "?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=15&HEIGHT=15&";
     uri += "LAYER="+layers[i].options.layers;  // layer name varies
@@ -377,11 +392,6 @@ function updateLegend(){
 });
 
 ```
-
-The map should have a control so you can switch and turn on/off the layers. You can be creative to define styles for the layers. No need to replicate the example map below.
-
-<img src ="images/fig11-7.jpg" width =800><br>
-
 Finally, upload the web map (index.html) into your UH web server.
 
 ## Submission
