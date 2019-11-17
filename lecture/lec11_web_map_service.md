@@ -344,7 +344,7 @@ L.control.layers(baseMaps, layers,  {collapsed: false, position:'bottomright'}).
 
 ### Step 2: Add interactive legend for the WMS layers
 
-Legend is an important component of maps (including web maps). GeoServer WMS layers allow access to the legend in the layer style file (SLD file) using an URI.
+Legend is an important component of maps (including web maps). GeoServer WMS layers allow access to the legend in a layer style file (SLD file) using an URI.
 
 Add the following codes after the previously added codes to have legends shown interactively when you turn on and off the WMS layers.
 
@@ -392,6 +392,8 @@ function updateLegend(){
 });
 
 ```
+Test your web map in the local http server.
+
 Finally, upload the web map (index.html) into your UH web server.
 
 ## Submission
