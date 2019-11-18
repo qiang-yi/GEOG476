@@ -348,7 +348,7 @@ At thsi step, your map should look like below. **Note**: you don't need to repli
 
 
 
-### Step 2: Add interactive legend for the WMS layers
+### Step 2 (OPTIONAL): Add interactive legend for the WMS layers
 
 Legend is an important component of maps (including web maps). GeoServer WMS layers allow access to the legend in a layer style file (SLD file) using an URI.
 
@@ -408,6 +408,8 @@ Finally, upload the web map (index.html) into your UH web server.
 
 ## Submission
 Submit the URL (e.g. www2.hawaii.edu/~yourusername...) to the web map through Laulima by **Nov 22th (Friday), 11:55pm**.
+
+Step 2 (legend) is optional. You'll receive full points if Step 1 is completed.
 
 **Important**: as you are sharing the same account in GeoServer, please name your layers and styles with your name or name initials (e.g. fz_yourname and fz_style_yourname) to distinguish from others. Please be careful not to delete others' files. If you did in accident, please let me or others know.
 
